@@ -3,7 +3,6 @@
 global.config = require('config');
 global.logger = require('./logger/logger');
 const express = require('express');
-const logger = require('./logger/logger');
 const app = express();
 
 app.set('port', config.get('PORT'));
