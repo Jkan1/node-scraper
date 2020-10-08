@@ -1,0 +1,29 @@
+{
+  "name": "node-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "jkan1",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "joi": "^17.1.1",
+    "mongodb": "^3.5.9",
+    "winston": "^3.3.3"
+  }
+}
