@@ -6,7 +6,7 @@ exports.RESPONSE_FLAGS = {
 }
 
 exports.RESPONSE_MESSAGES = {
-    SUCCESS : "SUCCESS",
+    SUCCESS : "Success",
     NOT_FOUND : "Not Found",
     SOMETHING_WENT_WRONG : "Something went wrong",
     PARAMETER_MISSING : "Parameters missing",
