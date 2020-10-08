@@ -3,12 +3,21 @@
 global.config = require('config');
 global.logger = require('./logger/logger');
 const express = require('express');
+const logger = require('./logger/logger');
 const app = express();
 
 app.set('port', config.get('PORT'));
 app.use(express.json());
 app.use(function (req, res, next) {
     logger.info(`API ${req.method}${req.url}`);
+    next();
+});
+
+app.use(function (error, req, res, next) {
+    logger.error("Error caught in middleware: ", error);
+    if (error) {
+        return res.sendStatus(400);
+    }
     next();
 });
 
