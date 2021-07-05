@@ -10,3 +10,6 @@
         * code : Response Status Code.
         * message : Response Message.
         * data : Scraped Data in JSON format. 
+* To be implemented
+   * Fetch data from websites
+   * Generate usable payload
